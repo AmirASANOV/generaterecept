@@ -5,7 +5,7 @@ const Input = () => {
   return (
     <div className={s.input_group}>
       <input type="text" required />
-      <label>Рецепт</label>
+      <label>Например: "Хлеб"</label>
     </div>
   );
 };

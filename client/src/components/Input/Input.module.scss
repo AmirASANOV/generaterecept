@@ -1,0 +1,35 @@
+.input_group {
+  position: relative;
+  margin: 20px 0;
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #0ef;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  input {
+    width: 360px;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px;
+    background: transparent;
+    border: 1.2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 5px;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label {
+    top: 0;
+    font-size: 14px;
+    background: #01003f;
+  }
+}
